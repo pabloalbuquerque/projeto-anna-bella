@@ -1,0 +1,148 @@
+body{
+    background: url('./imagens/fundo.png');   
+}
+
+a{
+    color: #4b566a;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
+}
+
+
+.capa{
+    margin:0px 220px;
+}
+
+.menu-central{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana;
+    font-size: 20px;
+    margin: 0px 200px;    
+}
+
+.title{
+    margin: 40px 200px 1.5px 200px;
+    background-color: rgb(245,245,220);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 35px;
+    color: gray;
+}
+
+.conteudo{
+    background-color: rgb(245,245,220);
+    font-family:Brush Script MT, Brush Script Std, cursive;
+    font-size: 25px;
+    margin: 0px 200px;
+}
+
+
+
+
+
+
+
+.title-ac{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: gray;
+    margin-left: 200px; 
+    margin-top: 40px;   
+}
+
+.conteudo-ac{
+    font-family:Brush Script MT, Brush Script Std, cursive;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+.conteudo-contact{
+   
+    font-family:Brush Script MT, Brush Script Std, cursive;
+    font-size: 25px;
+    margin: 30px 220px;
+}
+
+.info-contact{
+    flex-direction: column;
+    display: flex;
+    padding: 30px;
+    margin-left: 190px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+
+
+
+
+.botoes-carrossel{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.botoes-carrossel .botao{
+    background-color: #ffffff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    border-color: #ffffff;
+    transition: 0.2s ease-in-out;
+}
+
+.botoes-carrossel .botao:hover{
+    transform: scale(1.2)
+}
+
+.botoes-carrossel .botao.selecionado{
+    background-color: #ece579fd;
+}
+
+.carrossel .imagem{
+    width: 70%;
+    height: 100vh;
+    object-fit: cover;
+    display: none;
+    animation: mudarImagem 0.7s;
+    margin-left: 200px;
+    margin-bottom: 10px;
+    border: 10px solid #c3c3ae;
+}
+
+.carrossel .imagem.ativa{
+    display: block;
+}
+
+
+
+
+
+
+.rodape{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;    
+}
+
+
+@keyframes mudarImagem{
+    from{
+        opacity: 0.85;
+    }
+    to{
+      opacity: 1;   
+    }
+}
+
